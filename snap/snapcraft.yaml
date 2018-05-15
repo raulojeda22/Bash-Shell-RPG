@@ -1,4 +1,3 @@
-
   name: bash-shell-rpg
   version: '1.0' # just for humans, typically '1.2+git' or '1.3.2'
   summary: A 2D open world action RPG to play on the command line. # 79 char long summary
@@ -9,15 +8,16 @@
 
   grade: stable # must be 'stable' to release into candidate/stable channels
   confinement: strict # use 'strict' once you have the right plugs and slots
-  architectures: [ all ]
+  architectures: [ all ]  
   
   apps:
     bash-shell-rpg:
-      command: RPG.sh
+      command: bash RPG.sh
 
   parts:
     bash-shell-rpg:
       # See 'snapcraft plugins'
-      source: https://github.com/raulojeda22/Bash-Shell-RPG.git
       plugin: dump
-  
+      source: https://github.com/raulojeda22/Bash-Shell-RPG.git
+      install: |
+        chmod +x RPG.sh
