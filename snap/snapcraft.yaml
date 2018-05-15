@@ -17,6 +17,6 @@
   parts:
     bash-shell-rpg:
       # See 'snapcraft plugins'
-      source: https://github.com/raulojeda22/Bash-Shell-RPG
+      source: https://github.com/raulojeda22/Bash-Shell-RPG.git
       plugin: dump
   
