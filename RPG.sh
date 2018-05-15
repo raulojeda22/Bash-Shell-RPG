@@ -50,27 +50,27 @@ MAPA () {
 				then
 					objecteGenerat=$serpiente
 				fi
-			elif [ $objecteAleatori -lt 31994 ]     #armes
+			elif [ $objecteAleatori -lt 31990 ]     #armes
 			then 
-				if [ $objecteAleatori -lt 31970 ]
+				if [ $objecteAleatori -lt 31955 ]
 				then
 					objecteGenerat=$escopeta
-				elif [ $objecteAleatori -lt 31985 ]
+				elif [ $objecteAleatori -lt 31975 ]
 				then
 					objecteGenerat=$espadas
-				elif [ $objecteAleatori -lt 31997 ]
+				elif [ $objecteAleatori -lt 31990 ]
 				then
 					objecteGenerat=$espadaCurvada
 				fi
 			elif [ $objecteAleatori -lt 32000 ] #finals
 			then 
-				if [ $objecteAleatori -lt 31995 ]
+				if [ $objecteAleatori -lt 31993 ]
 				then
 					objecteGenerat=$corona
-				elif [ $objecteAleatori -lt 31997 ]
+				elif [ $objecteAleatori -lt 31996 ]
 				then
 					objecteGenerat=$hijo
-				elif [ $objecteAleatori -lt 31999 ]
+				elif [ $objecteAleatori -lt 32000 ]
 				then
 					objecteGenerat=$hija
 				fi
@@ -293,7 +293,7 @@ GUARDAR_OBJETOX () {
 					then
 						PANTALLA_GAME_OVER
 					fi
-	let points=$points+50
+	
 	
 }
 
@@ -309,7 +309,7 @@ GUARDAR_OBJETOY () {
 					then
 						PANTALLA_GAME_OVER
 					fi
-	let points=$points+50
+	
 }
 
 GUARDAR_OBJETOXY () {
@@ -326,7 +326,7 @@ GUARDAR_OBJETOXY () {
 					then
 						PANTALLA_GAME_OVER
 					fi
-	let points=$points+10
+	
 }
 
 PERSONAGE () {
@@ -1166,8 +1166,8 @@ espadaCurvada=`echo -e '\u26B8'` #⚸ #
 hijo=`echo -e '\u2D86'` #ⶆ
 hija=`echo -e '\u2D87'` #ⶇ
 objetoAnterior="·"
-tamanyMapaY=24
-tamanyMapaX=24
+tamanyMapaY=18
+tamanyMapaX=28
 let tamanyMapaYB=$tamanyMapaY-1
 let tamanyMapaXB=$tamanyMapaX-1
 let tamanyMapaYC=$tamanyMapaY-1
@@ -1199,5 +1199,4 @@ MOSTRAR_MAPA
 INVENTARIO
 COMPROBAR_MUERTE
 COMPROBAR_VICTORIA
-let points=$points+10
 done
