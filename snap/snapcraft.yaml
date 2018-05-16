@@ -12,7 +12,7 @@
   
   apps:
     bash-shell-rpg:
-      command: bash RPG.sh
+      command: RPG.sh
 
   parts:
     bash-shell-rpg:
