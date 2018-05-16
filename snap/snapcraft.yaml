@@ -12,7 +12,7 @@
   
   apps:
     bash-shell-rpg:
-      command: RPG.sh
+      command: bash $SNAP/RPG.sh
 
   parts:
     bash-shell-rpg:
