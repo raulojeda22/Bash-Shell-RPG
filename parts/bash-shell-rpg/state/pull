@@ -1,0 +1,28 @@
+!PullState
+assets:
+  build-packages: []
+  build-snaps: []
+  source-details: {source: 'https://github.com/raulojeda22/Bash-Shell-RPG.git', source-branch: '',
+    source-checksum: '', source-commit: 1fcab04a8f692e00603996455e6c772b70b8c9a1,
+    source-tag: ''}
+  stage-packages: []
+extracted_metadata:
+  files: []
+  metadata: !ExtractedMetadata
+    _data: {}
+project_options: {deb_arch: amd64}
+properties:
+  override-pull: snapcraftctl pull
+  parse-info: []
+  plugin: dump
+  source: https://github.com/raulojeda22/Bash-Shell-RPG.git
+  source-branch: ''
+  source-commit: ''
+  source-depth: 0
+  source-subdir: ''
+  source-tag: ''
+  source-type: ''
+  stage-packages: []
+schema_properties: []
+scriptlet_metadata: !ExtractedMetadata
+  _data: {}

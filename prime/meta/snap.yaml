@@ -1,0 +1,14 @@
+name: bash-shell-rpg
+version: '1.0'
+summary: A 2D open world action RPG to play on the command line.
+description: |
+  This is a pretty cool RPG game with weapons, enemies and an objective,
+  find your lost crown and your 2 childs in the middle of a forest
+  with a bunch of creatures and interesting objects.
+architectures:
+- all
+confinement: strict
+grade: devel
+apps:
+  bash-shell-rpg:
+    command: command-bash-shell-rpg.wrapper

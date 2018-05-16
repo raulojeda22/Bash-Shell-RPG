@@ -6,7 +6,7 @@
     find your lost crown and your 2 childs in the middle of a forest
     with a bunch of creatures and interesting objects.
 
-  grade: stable # must be 'stable' to release into candidate/stable channels
+  grade: devel # must be 'stable' to release into candidate/stable channels
   confinement: strict # use 'strict' once you have the right plugs and slots
   architectures: [ all ]  
   
