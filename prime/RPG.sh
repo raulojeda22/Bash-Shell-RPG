@@ -1118,15 +1118,17 @@ COMPROBAR_VICTORIA () {
 	fi
 }
 TUTORIAL (){
-	clear
-	echo "Move set: 
+clear
+echo "TUTORIAL
+
+MOVE SET: 
 
 Movement keys: q w e a d z x c
 Pick object from the floor: n or N
 Grab object from the inventory: 1234567890
 Attack with weapon: i j k l
 
-Objects:
+OBJECTS:
 
 You: $tu
 Nothing: $nada
@@ -1138,7 +1140,7 @@ Friendly NPCs: $aldeano $oveja
 Weapons: $espadas $espadaCurvada $escopeta
 You are searching: $corona $hijo $hija
 "
-echo -n "Press return to continue..."
+echo -n "Press return to play..."
 read
 }
 PANTALLA_GAME_OVER () {
