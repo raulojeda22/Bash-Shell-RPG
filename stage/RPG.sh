@@ -1117,6 +1117,30 @@ COMPROBAR_VICTORIA () {
 		PANTALLA_VICTORIA
 	fi
 }
+TUTORIAL (){
+	clear
+	echo "Move set: 
+
+Movement keys: q w e a d z x c
+Pick object from the floor: n or N
+Grab object from the inventory: 1234567890
+Attack with weapon: i j k l
+
+Objects:
+
+You: $tu
+Nothing: $nada
+Rock: $roca
+Flower: $flor 
+Traps: $trampa $muerte
+Enemies: $monstruo  $serpiente
+Friendly NPCs: $aldeano $oveja
+Weapons: $espadas $espadaCurvada $escopeta
+You are searching: $corona $hijo $hija
+"
+echo -n "Press return to continue..."
+read
+}
 PANTALLA_GAME_OVER () {
 	echo " _______  _______  _______  _______    _______           _______  _______ "
 	echo " (  ____ \(  ___  )(       )(  ____ \  (  ___  )|\     /|(  ____ \(  ____ )"
@@ -1180,6 +1204,7 @@ contadorDeMort=0
 cambiarMapa=0
 points=0
 ###########################MAIN PROGRAM###################################
+TUTORIAL
 MAPA
 PERSONAGE
 IR_A_POSICION
